@@ -1,19 +1,17 @@
 <template>
-  <div id="nav">
-    <!-- <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link> -->
-    <index/>
+  <div >
+        <router-view/>
   </div>
-  <router-view/>
 
 </template>
 <script>
-import index from './components/index.vue'
+// import index from './components/index.vue'
+
 export default {
   name: 'app',
-  components: {
-    index
-  }
+  // components: {
+  //   index
+  // }
   
 }
 </script>

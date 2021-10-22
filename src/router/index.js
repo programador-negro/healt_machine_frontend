@@ -1,5 +1,5 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
-import index from '../components/index.vue'
+// import index from '../components/index.vue'
 
 import autorizacionesView from '../components/pages/autorizaciones/autorizaciones.vue'
 import medicamentosView from '../components/pages/Medicamentos/medicamentos.vue'
@@ -16,8 +16,11 @@ import administracionKioscoView from '../components/pages/administracionKiosco/a
 const routes = [
   {
     path: '/',
-    name: 'Index',
-    component: index
+    // name: 'Index',
+    component: () => import('../layout/layout.vue'),
+    children: [
+      { path: '', name: 'inicio', component: () => import('../components/index.vue') }
+    ]
   },
   {
     path: '/about',
@@ -29,8 +32,8 @@ const routes = [
   },
   {
     path: '/autorizaciones',
-    name: 'Autorizaciones',
-    component: autorizacionesView
+    name: 'autorizaciones',
+    component: autorizacionesView,
   },
   {
     path: '/medicamentos',

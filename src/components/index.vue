@@ -2,7 +2,7 @@
   <div>
     <table>
       <tr>
-        <td class="opcion1" v-on:click="OpcionAutorizaciones()">
+        <td class="opcion1" >
           <router-link to="/autorizaciones">
             <figure>
               <img src="" alt="" />
