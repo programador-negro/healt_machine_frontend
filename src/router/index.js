@@ -17,6 +17,12 @@ const routes = [
   {
     path: '/',
     // name: 'Index',
+    component: () => import('../components/login.vue'),
+    
+  },
+  {
+    path: '/index',
+    // name: 'Index',
     component: () => import('../layout/layout.vue'),
     children: [
       { path: '', name: 'inicio', component: () => import('../components/index.vue') }
@@ -34,6 +40,10 @@ const routes = [
     path: '/autorizaciones',
     name: 'autorizaciones',
     component: autorizacionesView,
+    children: [
+      // { path: '/', name: 'inicio', component: () => import('../components/pages/autorizaciones/') },
+      // { path: '/', name: 'inicio', component: () => import('../components/index.vue') }
+    ]
   },
   {
     path: '/medicamentos',
