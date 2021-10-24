@@ -22,6 +22,20 @@ export default {
     padding: 13px;
     margin: 20px;
     font-size: 80px;
+
+    
+}
+.btn-salir {
+  position: absolute;
+  left: 0;
+    bottom:   0;
+
+}
+.btn-regresar {
+
+  position: absolute;
+  right: 0;
+    bottom:   0;
 }
 
 

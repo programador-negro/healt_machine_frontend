@@ -33,9 +33,5 @@ export default {
 <style scoped>
 @import '../../../../src/assets/css/autorizaciones.css';
 
-.boton {
-  position: absolute;
-  bottom:   0;
-}
 
 </style>
