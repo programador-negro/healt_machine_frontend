@@ -1,0 +1,2 @@
+# tickets_machine_touchscreen
+this is my physical ticket dispatcher like this example: https://www.google.com/url?sa=i&amp;url=https%3A%2F%2Ftouchboard.en.made-in-china.com%2Fproduct%2FiszxOZovGwku%2FChina-17-Inch-IR-Touch-Screen-Kiosk-Queue-Management-System-with-Ticket-Dispenser.html&amp;psig=AOvVaw2asaeXI-9hXx9nVVd7J4CL&amp;ust=1635136082334000&amp;source=images&amp;cd=vfe&amp;ved=0CAsQjRxqFwoTCKiW6vaa4vMCFQAAAAAdAAAAABAJ
