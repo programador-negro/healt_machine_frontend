@@ -35,14 +35,15 @@ const routes = [
     name: 'citas',
     component: citas,
     children: [
-      // { path: '/', name: 'inicio', component: () => import('../components/pages/autorizaciones/') },
+      { path: '/solicitar', name: 'citassolicitar', component: () => import('../components/pages/citas/citasSolicitar.vue') },
       // { path: '/', name: 'inicio', component: () => import('../components/index.vue') }
     ]
   },
   {
     path: '/medicamentos',
     name: 'medicamentos',
-    component: medicamentos
+    component: medicamentos,
+    
   },
   {
     path: '/reclamos',
