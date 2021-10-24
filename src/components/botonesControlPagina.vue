@@ -17,7 +17,7 @@ export default {
 
 .btn-salir, .btn-regresar {
     border-radius: 10px;
-    background-color: cadetblue;
+    background-color: black;
     color: white;
     padding: 13px;
     margin: 20px;
@@ -26,13 +26,16 @@ export default {
     
 }
 .btn-salir {
+  padding-right: 60px;
+  border-radius: 0rem 5rem 5rem 0rem;
   position: absolute;
   left: 0;
     bottom:   0;
 
 }
 .btn-regresar {
-
+  padding-left: 60px;
+  border-radius: 5rem 0rem 0rem 5rem;
   position: absolute;
   right: 0;
     bottom:   0;

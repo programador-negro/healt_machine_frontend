@@ -3,106 +3,42 @@
     <table>
       <tr>
         <td class="opcion1">
-          <router-link class="nonstyle" to="/autorizaciones">
-            <img src="../../src/assets/img/finger-print.jpg" alt="" />
-            <h5>Autorizaciones</h5>
+          <router-link class="nonstyle" to="/citas">
+            <img src="../../src/assets/img/citas-icon.png" alt="" />
+            <h5>Citas</h5>
             <p>
               Conoce aquí nuestros canales para consultar y gestionar tus
-              autorizaciones.
+              citas.
             </p>
           </router-link>
         </td>
         <td>
           <router-link class="nonstyle" to="/medicamentos">
-            <img src="../../src/assets/img/finger-print.jpg" alt="" />
-            <h5>Medicamenteos</h5>
+            <img src="../../src/assets/img/medicamentos-icon.png" alt="" />
+            <h5>Medicamentos</h5>
             <p>Conoce nuestro modelo de entrega de medicamentos</p>
           </router-link>
         </td>
         <td>
-          <router-link class="nonstyle" to="/redAtencion">
-            <img src="../../src/assets/img/finger-print.jpg" alt="" />
-            <h5>Red de atención</h5>
+          <router-link class="nonstyle" to="/reclamos">
+            <img src="../../src/assets/img/reclamos-icon.png" alt="" />
+            <h5>Reclamos</h5>
             <p>
-              Accede a la información de nuestros centros médicos, oficinas y
-              droguerías de cruz verde.
+              Haz saber tus reclamos.
             </p>
           </router-link>
         </td>
       </tr>
-
+      <br>
+      <br>
       <tr>
-        <td>
-          <router-link class="nonstyle" to="/citasMedicas">
-            <img src="../../src/assets/img/finger-print.jpg" alt="" />
-
-            <h5>Citas Médicas</h5>
-            <p>
-              Consulta como solictar tus citas de medicina general, pediatría,
-              laboratorio y optometría
-            </p>
-          </router-link>
-        </td>
-
-        <td>
-          <router-link class="nonstyle" to="/planPremium">
-            <img src="../../src/assets/img/finger-print.jpg" alt="" />
-
-            <h5>Plan Premium</h5>
-            <p>
-              Conoce como acceder a beneficios especiales y coberturas
-              adicionales
-            </p>
-          </router-link>
-        </td>
-
-        <td>
-          <router-link class="nonstyle" to="/laboratorios">
-            <img src="../../src/assets/img/finger-print.jpg" alt="" />
-
-            <h5>Laboratorios</h5>
-            <p>
-              Conoce como consultar los resultados de los laboratorios tomados
-              en la infraestructura propia
-            </p>
-          </router-link>
-        </td>
-      </tr>
-
-      <tr>
-        <td>
-          <router-link class="nonstyle" to="/imagenesDiagnosticas">
-            <img src="../../src/assets/img/finger-print.jpg" alt="" />
-
-            <h5>Imágenes diagnosticas</h5>
-            <p>
-              Conoce como consultar el resultado de tus imágenes Diagnosticas
-            </p>
-          </router-link>
-        </td>
-
-        <td>
-          <router-link  class="nonstyle"  to="/certificados">
-            <img src="../../src/assets/img/finger-print.jpg" alt="" />
-
-            <h5>Certificados</h5>
-            <p>Conoce que certificados puedes solicitar por oficina virtual</p>
-          </router-link>
-        </td>
-
-        <td>
-          <router-link class="nonstyle" to="/canalesDeServicios" >
-            <img src="../../src/assets/img/finger-print.jpg" alt="" />
-
-            <h5>Canales de servicio</h5>
-            <p>Conoce los canales de atención virtual</p>
-          </router-link>
-        </td>
-      </tr>
-      <tr>
+        <td></td>
         <td>
           <router-link class="nonstyle" to="/administracionKiosco">
+            <img src="../../src/assets/img/admin-icon.png" alt="" />
+            <h5>
             Administracion del Kiosco
+            </h5>
           </router-link>
         </td>
       </tr>
@@ -157,6 +93,18 @@ img {
 .nonstyle {
   text-decoration: none; 
   color: inherit;
+}
+table {
+  margin: 5% 25% ;
+}
+
+td {
+  width: 7%;
+  padding: 0% 5%;
+  /* border: 1px solid black; */
+}
+p, h5 {
+  font-size: large;
 }
 
 

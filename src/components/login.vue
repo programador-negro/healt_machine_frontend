@@ -2,6 +2,10 @@
   <div>
     <div class="principal">
       <div class="container">
+        <h2>
+          Ingrese su numero de cedula
+        </h2>
+        <hr>
         <div class="NumberShowPanel">
           {{ documento }}
         </div>
@@ -46,7 +50,7 @@
               <button class="NumerButton" v-on:click="NumberTyped(0)">0</button>
             </td>
             <td>
-              <button class="NumerButton" v-on:click="DeleteDocument()">
+              <button class="DeleteButton" v-on:click="DeleteDocument()">
                 Borrar
               </button>
             </td>
@@ -78,7 +82,7 @@ export default {
       // funcion temporal
       console.log("LEGNTH DOC: ", this.documento);
 
-      if (this.documento.length > 10) {
+      if (this.documento.length >= 10) {
         console.log("DOCUMENTO: OK");
 
         this.$router.push("/index");
@@ -105,8 +109,8 @@ export default {
 
 <style>
 .principal {
-  border: 2px solid rgb(219, 87, 87);
-  background-image: url("../assets/img/background-principal.jpg");
+  /* border: 2px solid rgb(219, 87, 87); */
+  background-image: url("../assets/img/medical-emblem.png");
   background-repeat: no-repeat;
   background-size:contain ;
   background-position:left ;
@@ -114,16 +118,44 @@ export default {
   height: 839px;
 }
 .NumerButton {
-  width: 100px;
-  height: 100px;
+  width: 130px;
+  height: 130px;
+  background-color: transparent;
+  border-radius: 10px;
+  border-color: grey;
+  color: black;
+  font-size: x-large;
 }
-
+.NumerButton:hover {
+  width: 130px;
+  height: 130px;
+  background-color: black;
+  border-radius: 10px;
+  border-color: black;
+  color: white;
+  font-size: x-large;
+}
+.DeleteButton {
+  width: 130px;
+  height: 130px;
+  background-color: orange;
+  border-radius: 10px;
+  border-color: orange;
+  color: white;
+  font-size: x-large;
+}
 .SubmitButton {
-  width: 180px;
-  height: 100%;
+  width: 390px;
+  height: 100px;
+  background-color: cadetblue;
+  border-radius: 10px;
+  border-color: cadetblue;
+  color: white;
+  font-size: xx-large;
+
 }
 .NumberShowPanel {
-  width: 280px;
+  width: 380px;
   height: 50px;
   border: 2px solid grey;
   border-radius: 15px;
