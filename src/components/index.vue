@@ -1,5 +1,5 @@
 <template>
-  <div >
+  <div class="bodyComponent">
     <table>
       <tr>
         <td class="opcion1">
@@ -83,7 +83,10 @@ export default {
 </script>
 
 <style scoped>
-
+/* .bodyComponent {
+  border: 1px solid red;
+  margin: 0;
+} */
 
 img {
   width: 100px;
