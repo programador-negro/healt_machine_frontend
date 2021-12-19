@@ -2,10 +2,8 @@
   <div>
     <div class="principal">
       <div class="container">
-        <h2>
-          Ingrese su numero de cedula
-        </h2>
-        <hr>
+        <h2>Ingrese su numero de cedula</h2>
+        <hr />
         <div class="NumberShowPanel">
           {{ documento }}
         </div>
@@ -55,6 +53,27 @@
               </button>
             </td>
           </tr>
+          <tr>
+            <td>
+              <q-btn padding="90px 90px" color="primary" icon="looks_6" />
+            </td>
+            <td>
+              <div class="q-pa-md q-gutter-sm">
+                <div class="q-gutter-xl">
+                  <!-- <q-radio dense v-model="shape" val="line" label="Line" />
+        <q-radio dense v-model="shape" val="rectangle" label="Rectangle" />
+        <q-radio dense v-model="shape" val="ellipse" label="Ellipse" />
+        <q-radio size="xl" v-model="shape" val="xl" label="Size 'xl'" /> -->
+                  <q-radio
+                    size="150px"
+                    v-model="shape"
+                    val="150px"
+                    label="Size '150px'"
+                  />
+                </div>
+              </div>
+            </td>
+          </tr>
         </table>
         <br />
         <button type="button" class="SubmitButton" v-on:click="Ingresar()">
@@ -62,7 +81,6 @@
         </button>
       </div>
     </div>
-
   </div>
 </template>
 
@@ -75,6 +93,7 @@ export default {
   data() {
     return {
       documento: "",
+      shape: "",
     };
   },
   methods: {
@@ -112,8 +131,8 @@ export default {
   /* border: 2px solid rgb(219, 87, 87); */
   background-image: url("../assets/img/medical-emblem.png");
   background-repeat: no-repeat;
-  background-size:contain ;
-  background-position:left ;
+  background-size: contain;
+  background-position: left;
   width: 100%;
   height: 839px;
 }
@@ -140,19 +159,20 @@ export default {
   height: 130px;
   background-color: orange;
   border-radius: 10px;
-  border-color: orange;
+  border-color: transparent;
   color: white;
   font-size: x-large;
+  box-shadow: 0px 0px 22px 0px #616161;
 }
 .SubmitButton {
   width: 390px;
   height: 100px;
-  background-color: cadetblue;
+  background: linear-gradient(90deg, #000 0%, #000 0%, #000 0%, #000 0%, #000 4%, #000 29%, #000 31%, #ff0000 100%);
   border-radius: 10px;
   border-color: cadetblue;
   color: white;
   font-size: xx-large;
-
+  box-shadow: 10px 17px 40px 0px #000;
 }
 .NumberShowPanel {
   width: 380px;

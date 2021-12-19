@@ -43,6 +43,8 @@
         </td>
       </tr>
     </table>
+    <iframe height="500" width="500" src="https://www.epssanitas.com/usuarios/web/nuevo-portal-eps/inicio?p_p_id=58&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&saveLastPath=false&_58_struts_action=%2Flogin%2Flogin#gsc.tab=0" frameborder="0">
+    </iframe>
     <botones/>
   </div>
 </template>
